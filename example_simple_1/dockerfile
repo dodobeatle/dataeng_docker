@@ -1,6 +1,12 @@
-FROM python:3.9
-MAINTAINER "Pedro Araujo <dodobeatle@gmail.com>"
-RUN apt-get update && apt-get install -y
+ # base image
+FROM python:3.9  
+# maintainer o quien es el que mantiene el dockerfile
+MAINTAINER "Pedro Araujo <dodobeatle@gmail.com>"  
 
-COPY app.py /app/
-CMD ["python", "/app/app.py"]
+# actualiza los paquetes y instala los paquetes necesarios
+RUN apt-get update && apt-get install -y   
+
+# copia el archivo app.py al directorio /app/
+COPY app.py /app/   
+# ejecuta el archivo app.py que se encuentra 
+CMD ["python", "/app/app.py"]   
