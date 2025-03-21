@@ -1,5 +1,7 @@
 # Ejemplo Simple 1 
-Este ejemplo es el más sencillo para crear una imagen a partir de una archivo dockerfile. 
+Este ejemplo es el más sencillo para crear una imagen a partir de una archivo dockerfile. Laintención del mismo es mostrar la estructura básica del dockerfile.
+
+A continuación se describe como materializar el ejemplo. 
 
 En línea de comando ejecutar la siguiente intrucción:
 ```bash
